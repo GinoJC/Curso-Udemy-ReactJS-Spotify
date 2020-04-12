@@ -4,12 +4,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import 'semantic-ui-css/semantic.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 import './index.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 
