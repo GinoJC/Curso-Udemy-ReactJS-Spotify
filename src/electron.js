@@ -12,7 +12,8 @@ function createWindow() {
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
   if (isDev) {
     // Open the DevTools.
-    //BrowserWindow.addDevToolsExtension('<location to your react chrome extension>');
+    //BrowserWindow.addDevToolsExtension('C:\\Users\\ginoj\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\fmkadmapgofadopljbjfkapdkoienihi\\4.6.0_0');
+    BrowserWindow.addDevToolsExtension('C:\\Users\\ginoj\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Extensions\\gpphkfbcpidddadnkolkpfckpihlkkil\\4.5.0_0');
     mainWindow.webContents.openDevTools();
   }
   mainWindow.on('closed', () => mainWindow = null);
