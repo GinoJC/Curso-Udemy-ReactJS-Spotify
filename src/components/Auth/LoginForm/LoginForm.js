@@ -50,7 +50,7 @@ export default function LoginForm(props) {
                 .auth()
                 .signInWithEmailAndPassword(formData.email, formData.password)
                 .then(response => {
-                    setUserActive(response.user);
+                    setUser(response.user);
                     setUserActive(response.user.emailVerified);
                     if(!response.user.emailVerified){
                         toast.warning("Para poder loguearse antes tiene que verificar la cuenta.");
@@ -135,7 +135,9 @@ function ButtonResetSendEmailVerification(props){
         .then(() => {
             toast.success("Se ha enviado el email de verificación.")
         }).catch(err => {
-            handlerErrors(err.code);
+            console.log(err);
+            
+            //handlerErrors(err.code);
         }).finally(() => {
             setIsLoading(false);
             setUserActive(true);
