@@ -1,4 +1,4 @@
-import React, {useState, Children} from 'react';
+import React, {useState} from 'react';
 import UploadAvatar from "../../components/Settings/UploadAvatar";
 import BasicModal from "../../components/Modal/BasicModal";
 import UserName from "../../components/Settings/UserName";
